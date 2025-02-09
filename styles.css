@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#quiz-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    height:600px;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 18px; /* Kích thước chữ câu hỏi nhỏ */
+    height: 80px; /* Cố định chiều cao */
+    overflow: hidden;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:disabled {
+    background-color: #f9f9f9;
+    cursor: not-allowed;
+}
+
+button.answer-btn:hover {
+    background-color: #f0f0f0;
+}
+
+#explanation {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+    height: 50px;
+    overflow: hidden;
+}
+
+#buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
