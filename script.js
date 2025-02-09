@@ -73,10 +73,8 @@ function checkAnswer(selectedAnswer) {
     answerButtons.forEach((button, index) => {
         if (index + 1 === correctAnswer) {
             button.style.backgroundColor = "green"; // Màu xanh cho đáp án đúng
-            button.style.color = "white"; // Màu chữ trắng cho đáp án đúng
         } else {
             button.style.backgroundColor = index + 1 === selectedAnswer ? "red" : "#f9f9f9"; // Màu đỏ cho đáp án sai
-            button.style.color = index + 1 === selectedAnswer ? "white" : "black"; // Màu chữ trắng cho đáp án sai và đen cho các đáp án khác
         }
         button.disabled = true; // Khóa không cho click lại
     });
